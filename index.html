@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Danaé Zabala</title>
+  <meta name="description" content="Danaé Zabala, M2 Data Science student at École polytechnique, looking for a 6-month AI / data science internship from April 2027.">
+
+  <!-- Fonts: IBM Plex Serif (titles) and Hanken Grotesk (text), from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+    HOW THE TWO LANGUAGES WORK
+    Every text exists twice: once with lang="en", once with lang="fr".
+    The CSS only shows the one matching the current language,
+    and the button in the top bar switches between them.
+    To change a text, change it in both languages.
+  -->
+
+  <!-- ============ HERO (first screen) ============ -->
+  <header class="hero">
+
+    <nav class="topbar">
+      <div class="topbar-links">
+        <a href="#work"><span lang="en">Work</span><span lang="fr">Projets</span></a>
+        <a href="#about"><span lang="en">About</span><span lang="fr">À propos</span></a>
+        <a href="#contact">Contact</a>
+        <a class="pill" href="cv.pdf" target="_blank">CV</a>
+        <button class="lang-switch" type="button">FR</button>
+      </div>
+    </nav>
+
+    <div class="hero-text">
+      <!-- The big pale word behind the name. aria-hidden = screen readers skip it -->
+      <span class="ghost" aria-hidden="true">Zabala</span>
+
+      <h1>Danaé Zabala</h1>
+      <p class="hero-sub" lang="en">Data science, with a cybersecurity background</p>
+      <p class="hero-sub" lang="fr">Data science, avec un parcours en cybersécurité</p>
+
+      <p class="hero-intro" lang="en">
+        I build machine-learning systems end to end, from raw logs to models
+        running in production. I'm looking for a 6-month AI / data science
+        internship starting April 2027.
+      </p>
+      <p class="hero-intro" lang="fr">
+        Je construis des systèmes de machine learning de bout en bout, des logs
+        bruts jusqu'aux modèles en production. Je cherche un stage de fin
+        d'études de 6 mois en IA / data science à partir d'avril 2027.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#work"><span lang="en">See my work</span><span lang="fr">Voir mes projets</span></a>
+        <a href="mailto:danae.zabala6@gmail.com"><span lang="en">Email me</span><span lang="fr">M'écrire</span></a>
+      </div>
+    </div>
+
+    <figure class="hero-photo">
+      <img src="photo.jpg" alt="Danaé Zabala" width="1100" height="1210">
+      <figcaption lang="en">
+        Now: M2 Data Science at École polytechnique.
+        Before: a cybersecurity engineering degree at ISEP and a semester in Prague.
+      </figcaption>
+      <figcaption lang="fr">
+        Aujourd'hui : M2 Data Science à l'École polytechnique.
+        Avant : un diplôme d'ingénieur en cybersécurité à l'ISEP et un semestre à Prague.
+      </figcaption>
+    </figure>
+
+    <!-- Dark strip at the bottom: quick links to projects -->
+    <div class="hero-strip">
+      <a class="strip-more" href="#work">
+        <span lang="en">Selected work</span><span lang="fr">Projets</span>
+        <span aria-hidden="true">›</span>
+      </a>
+      <a class="strip-item" href="#fashion">
+        <strong lang="en">Fashion trend data lake</strong>
+        <strong lang="fr">Data lake tendances mode</strong>
+        <span>Airflow, Spark</span>
+      </a>
+      <a class="strip-item" href="#groupama">
+        <strong lang="en">Phishing classifier</strong>
+        <strong lang="fr">Détection de phishing</strong>
+        <span>Groupama</span>
+      </a>
+      <a class="strip-item" href="#rag">
+        <strong lang="en">RAG for cybersecurity</strong>
+        <strong lang="fr">RAG cybersécurité</strong>
+        <span>MITRE ATT&amp;CK</span>
+      </a>
+      <a class="strip-item" href="#bikes">
+        <strong lang="en">Real-time bike data</strong>
+        <strong lang="fr">Vélos en temps réel</strong>
+        <span>Kafka, Streamlit</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <h2><span lang="en">About</span><span lang="fr">À propos</span></h2>
+      <div class="section-body">
+        <p class="lead" lang="en">
+          I trained as a cybersecurity engineer, and that's where I learned to
+          care about data: logs, emails, network traffic, and what they reveal
+          when something goes wrong. Today I study machine learning at
+          École polytechnique and I like the whole path, from cleaning the data
+          to shipping a model someone actually uses.
+        </p>
+        <p class="lead" lang="fr">
+          J'ai été formée comme ingénieure en cybersécurité, et c'est là que
+          j'ai appris à m'intéresser aux données : logs, e-mails, trafic réseau,
+          et ce qu'ils révèlent quand quelque chose ne va pas. Aujourd'hui,
+          j'étudie le machine learning à l'École polytechnique, et j'aime tout
+          le chemin, du nettoyage des données jusqu'au modèle que quelqu'un
+          utilise vraiment.
+        </p>
+        <p lang="en">
+          I'm also the graphic designer of Junior ISEP, so I pay attention to
+          how results are shown, not only to how they're computed.
+        </p>
+        <p lang="fr">
+          Je suis aussi graphiste de la Junior ISEP : je fais attention à la
+          façon dont les résultats sont montrés, pas seulement à la façon dont
+          ils sont calculés.
+        </p>
+
+        <dl class="facts">
+          <div>
+            <dt><span lang="en">Based in</span><span lang="fr">Basée à</span></dt>
+            <dd><span lang="en">Paris area</span><span lang="fr">Région parisienne</span></dd>
+          </div>
+          <div>
+            <dt><span lang="en">Available</span><span lang="fr">Disponible</span></dt>
+            <dd><span lang="en">April 2027, for 6 months</span><span lang="fr">Avril 2027, pour 6 mois</span></dd>
+          </div>
+          <div>
+            <dt><span lang="en">Languages</span><span lang="fr">Langues</span></dt>
+            <dd>
+              <span lang="en">French (native), English (fluent, TOEIC 980/990)</span>
+              <span lang="fr">Français (langue maternelle), anglais (courant, TOEIC 980/990)</span>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <div id="work">
+
+      <!-- ============ PROJECTS ON GITHUB (highlighted) ============
+           This section stays hidden while it has no project inside.
+           To add one: copy the example below, remove the <!- - and - -> around it,
+           and fill in the texts and the GitHub link. -->
+      <section class="section featured" id="github">
+        <h2><span lang="en">On GitHub</span><span lang="fr">Sur GitHub</span></h2>
+        <div class="section-body">
+          <article class="project" id="rag">
+            <h3 lang="en">RAG assistant for cybersecurity</h3>
+            <h3 lang="fr">Assistant RAG pour la cybersécurité</h3>
+            <p lang="en">
+              An assistant that answers questions about attacker techniques.
+              I prepared the MITRE ATT&amp;CK knowledge base (STIX format) and
+              built the embeddings used for semantic search.
+            </p>
+            <p lang="fr">
+              Un assistant qui répond aux questions sur les techniques
+              d'attaque. J'ai préparé la base de connaissances MITRE ATT&amp;CK
+              (format STIX) et construit les embeddings utilisés pour la
+              recherche sémantique.
+            </p>
+            <p class="stack">Python, embeddings, retrieval-augmented generation</p>
+            <a class="link" href="https://github.com/dzabala-code/cyber_rag_assistant" target="_blank" rel="noopener">
+              <span lang="en">View on GitHub</span><span lang="fr">Voir sur GitHub</span>
+            </a>
+          </article>
+
+           <article class="project" id="bikes">
+            <h3 lang="en">Real-time bike-sharing pipeline</h3>
+            <h3 lang="fr">Pipeline temps réel de vélos en libre-service</h3>
+            <p lang="en">
+              Station data from the JCDecaux API every 10 seconds, streamed
+              through Kafka (3 topics, 5 consumers). It sends live alerts when a
+              station is empty and shows a live map in Streamlit.
+            </p>
+            <p lang="fr">
+              Les données des stations arrivent de l'API JCDecaux toutes les
+              10 secondes et passent par Kafka (3 topics, 5 consommateurs). Le
+              système envoie une alerte dès qu'une station est vide et affiche une
+              carte en direct dans Streamlit.
+            </p>
+            <p class="stack">Kafka, Python, Streamlit</p>
+            <a class="link" href="https://github.com/dzabala-code/velo-kafka-pipeline" target="_blank" rel="noopener">
+              <span lang="en">View on GitHub</span><span lang="fr">Voir sur GitHub</span>
+            </a>
+          </article>
+
+          <!--
+          <article class="project">
+            <h3 lang="en">Project name</h3>
+            <h3 lang="fr">Nom du projet</h3>
+            <p lang="en">What the project does, in two or three sentences.</p>
+            <p lang="fr">Ce que fait le projet, en deux ou trois phrases.</p>
+            <p class="stack">Python, PyTorch, Docker</p>
+            <a class="link" href="https://github.com/dzabala-code/REPO-NAME" target="_blank" rel="noopener">
+              <span lang="en">View on GitHub</span><span lang="fr">Voir sur GitHub</span>
+            </a>
+          </article>
+          -->
+
+        </div>
+      </section>
+
+      <!-- ============ OTHER PROJECTS (no public code) ============ -->
+      <section class="section" id="projects">
+        <h2><span lang="en">Selected work</span><span lang="fr">Projets</span></h2>
+        <div class="section-body">
+
+          <article class="project" id="fashion">
+            <h3 lang="en">Fashion trend data lake</h3>
+            <h3 lang="fr">Data lake de détection de tendances mode</h3>
+            <p lang="en">
+              Can a fashion trend be spotted before it takes off on the resale
+              market? A daily Airflow pipeline pulls signals from fashion media,
+              Reddit, Google Trends, eBay and Vinted, extracts trend keywords,
+              scores them across sources and ranks resale offers with a Random
+              Forest. Results land in Elasticsearch and a Kibana dashboard.
+            </p>
+            <p lang="fr">
+              Peut-on repérer une tendance mode avant qu'elle n'explose sur le
+              marché de la seconde main ? Un pipeline Airflow quotidien récupère
+              des signaux dans la presse mode, sur Reddit, Google Trends, eBay et
+              Vinted, extrait des mots-clés de tendance, les note d'une source à
+              l'autre et classe les offres de revente avec un Random Forest. Les
+              résultats arrivent dans Elasticsearch et un tableau de bord Kibana.
+            </p>
+            <p class="stack">Python, Airflow, PySpark, MinIO, Elasticsearch, Kibana, scikit-learn, Docker</p>
+          </article>
+
+          <article class="project" id="groupama">
+            <h3 lang="en">Phishing and spam classifier</h3>
+            <h3 lang="fr">Classification phishing et spam</h3>
+            <p lang="en">
+              During my internship at Groupama, I built the pipeline that parses
+              and cleans incoming emails, then trained models to sort them into
+              legitimate, phishing and spam. Up to 90% precision: +19% on
+              legitimate and phishing, +37% on spam compared to the previous
+              model. The model was handed over for production.
+            </p>
+            <p lang="fr">
+              Pendant mon stage chez Groupama, j'ai construit le pipeline qui
+              analyse et nettoie les e-mails reçus, puis entraîné des modèles pour
+              les classer en légitimes, phishing et spam. Jusqu'à 90 % de
+              précision : +19 % sur les classes légitime et phishing, +37 % sur le
+              spam par rapport au modèle précédent. Le modèle a été livré pour sa
+              mise en production.
+            </p>
+            <p class="stack" lang="en">Python, pandas, scikit-learn (Naive Bayes, logistic regression)</p>
+            <p class="stack" lang="fr">Python, pandas, scikit-learn (Naive Bayes, régression logistique)</p>
+          </article>
+
+          <article class="project" id="hackathon">
+            <h3 lang="en">Attack detection in web logs</h3>
+            <h3 lang="fr">Détection d'attaques dans des logs web</h3>
+            <p lang="en">
+              At the Silicon Days hackathon (Garage ISEP &times; Capgemini), I
+              designed the pipeline and an LSTM autoencoder that flags attacks in
+              10,000 lines of HTTP logs. The prototype was later applied to
+              Junior ISEP's own logs.
+            </p>
+            <p lang="fr">
+              Au hackathon Silicon Days (Garage ISEP &times; Capgemini), j'ai
+              conçu l'architecture du pipeline et un autoencodeur LSTM qui repère
+              les attaques dans 10 000 lignes de logs HTTP. Le prototype a ensuite
+              été appliqué aux logs de la Junior ISEP.
+            </p>
+            <p class="stack" lang="en">TensorFlow / Keras, LSTM autoencoder, anomaly detection</p>
+            <p class="stack" lang="fr">TensorFlow / Keras, autoencodeur LSTM, détection d'anomalies</p>
+          </article>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <h2><span lang="en">Experience</span><span lang="fr">Expérience</span></h2>
+      <div class="section-body">
+
+        <article class="entry">
+          <p class="date"><span lang="en">Sept. 2025 – Jan. 2026</span><span lang="fr">Sept. 2025 – janv. 2026</span></p>
+          <div>
+            <h3 lang="en">Data science intern, cybersecurity</h3>
+            <h3 lang="fr">Stagiaire data science, cybersécurité</h3>
+            <p class="place">Groupama</p>
+            <p lang="en">
+              Email classification (see above), and data-leak detection: I
+              collected and prepared SIEM logs, then designed a PyTorch
+              autoencoder that spots unusual behaviour.
+            </p>
+            <p lang="fr">
+              Classification d'e-mails (voir plus haut) et détection de fuites de
+              données : j'ai collecté et préparé les logs du SIEM, puis conçu un
+              autoencodeur PyTorch qui repère les comportements inhabituels.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <p class="date"><span lang="en">Apr. 2025 – now</span><span lang="fr">Avr. 2025 – aujourd'hui</span></p>
+          <div>
+            <h3 lang="en">Head of communication and graphic designer</h3>
+            <h3 lang="fr">Responsable communication et graphiste</h3>
+            <p class="place" lang="en">Junior ISEP, board member</p>
+            <p class="place" lang="fr">Junior ISEP, membre du conseil d'administration</p>
+            <p lang="en">
+              Communication strategy for a student consulting firm with over
+              €250k in yearly revenue. Finalist of the 2025 AI &amp; Innovation
+              prize (Saint-Gobain) for Wandix, our internal AI assistant (RAG,
+              MCP server, 15 connected tools, 40+ hours saved each month), and of
+              the 2025 best commercial strategy prize (Alten).
+            </p>
+            <p lang="fr">
+              Stratégie de communication d'une Junior-Entreprise de plus de
+              250 000 € de chiffre d'affaires annuel. Finaliste du prix IA et
+              Innovation 2025 (Saint-Gobain) pour Wandix, notre assistant IA
+              interne (RAG, serveur MCP, 15 outils connectés, plus de 40 h gagnées
+              par mois), et du prix de la meilleure stratégie commerciale 2025
+              (Alten).
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <h2><span lang="en">Education</span><span lang="fr">Formation</span></h2>
+      <div class="section-body">
+
+        <article class="entry">
+          <p class="date">2026 – 2027</p>
+          <div>
+            <h3>Master 2 Data Science</h3>
+            <p class="place">École polytechnique, Institut Polytechnique de Paris</p>
+            <p lang="en">
+              Machine learning, deep learning, NLP, generative models, time
+              series, explainable AI, optimisation, reinforcement learning,
+              data streams.
+            </p>
+            <p lang="fr">
+              Machine learning, deep learning, NLP, modèles génératifs, séries
+              temporelles, IA explicable, optimisation, apprentissage par
+              renforcement, traitement de flux de données.
+            </p>
+          </div>
+        </article>
+
+        <article class="entry">
+          <p class="date">2022 – 2026</p>
+          <div>
+            <h3 lang="en">Engineering degree, cybersecurity</h3>
+            <h3 lang="fr">Diplôme d'ingénieur, cybersécurité</h3>
+            <p class="place">ISEP, Paris</p>
+            <p lang="en">
+              Network security, blockchain and cryptography. GPA 16.11/20.
+              Exchange semester in cybersecurity at the Czech Technical
+              University in Prague.
+            </p>
+            <p lang="fr">
+              Sécurité des réseaux, blockchain et cryptographie. Moyenne :
+              16,11/20. Semestre d'échange en cybersécurité à l'Université
+              technique tchèque de Prague (CTU).
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <h2><span lang="en">Skills</span><span lang="fr">Compétences</span></h2>
+      <div class="section-body skills">
+        <div>
+          <h3>Machine learning</h3>
+          <p lang="en">Python, scikit-learn, PyTorch, TensorFlow / Keras. Classification, regression, clustering, anomaly detection, model evaluation.</p>
+          <p lang="fr">Python, scikit-learn, PyTorch, TensorFlow / Keras. Classification, régression, clustering, détection d'anomalies, évaluation de modèles.</p>
+        </div>
+        <div>
+          <h3>Data engineering</h3>
+          <p>SQL, Spark, Kafka, Airflow, Docker, Elasticsearch, Kibana, Streamlit.</p>
+        </div>
+        <div>
+          <h3><span lang="en">Tools</span><span lang="fr">Outils</span></h3>
+          <p lang="en">Git and GitHub, Linux, Figma.</p>
+          <p lang="fr">Git et GitHub, Linux, Figma.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ CONTACT ============ -->
+  <footer class="contact" id="contact">
+    <p class="contact-title" lang="en">Hiring a data science intern for April 2027?</p>
+    <p class="contact-title" lang="fr">Vous cherchez une stagiaire en data science pour avril 2027 ?</p>
+    <a class="contact-mail" href="mailto:danae.zabala6@gmail.com">danae.zabala6@gmail.com</a>
+
+    <div class="contact-links">
+      <!-- TODO: replace with your real LinkedIn address -->
+      <a href="www.linkedin.com/in/danaé-zabala-338792290/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/dzabala-code" target="_blank" rel="noopener">GitHub</a>
+      <a href="cvDanae.pdf" target="_blank"><span lang="en">CV (PDF, in French)</span><span lang="fr">CV (PDF)</span></a>
+    </div>
+
+    <p class="copyright">© 2026 Danaé Zabala</p>
+  </footer>
+
+  <!-- Language switch: the only JavaScript on the site -->
+  <script>
+    const button = document.querySelector('.lang-switch');
+
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;            // the CSS reads this
+      button.textContent = lang === 'en' ? 'FR' : 'EN';  // the button shows the other language
+      button.setAttribute('aria-label', lang === 'en' ? 'Passer en français' : 'Switch to English');
+      try { localStorage.setItem('lang', lang); } catch (e) {}  // remember the choice
+    }
+
+    // First visit: French if the visitor's browser is in French, English otherwise
+    let saved = null;
+    try { saved = localStorage.getItem('lang'); } catch (e) {}
+    setLanguage(saved || (navigator.language.startsWith('fr') ? 'fr' : 'en'));
+
+    button.addEventListener('click', function () {
+      setLanguage(document.documentElement.lang === 'en' ? 'fr' : 'en');
+    });
+  </script>
+
+</body>
+</html>
